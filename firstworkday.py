@@ -4,7 +4,7 @@ import json
 from datetime import timedelta,date
 
 
-mydate = datetime.datetime.now()- datetime.timedelta(days = 3)
+mydate = datetime.datetime.now()
 day = mydate.strftime("%Y%m%d")    
 print (day)
 
