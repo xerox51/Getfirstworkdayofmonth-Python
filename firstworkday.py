@@ -1,8 +1,7 @@
 import requests
 import datetime
 import json
-from datetime import timedelta,date
-
+from datetime import timedelta
 
 mydate = datetime.datetime.now()
 day = mydate.strftime("%Y%m%d")    
