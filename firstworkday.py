@@ -16,9 +16,7 @@ else:
 	flag = False
 	
 def api(day):
-
 	server_url = "http://api.goseek.cn/Tools/holiday?date="
-	
 	try:
 		response = requests.get(server_url + day)
 	except UnicodeDecodeError:
@@ -30,14 +28,11 @@ def api(day):
 
 daytype = api(day)
 
-
 def typeday(daytype):
-
 	if daytype == 0 or daytype == 2:
 		message = "workday"
 	else:
-		message = "holiday"
-		
+		message = "holiday"	
 	return message
 	
 print(typeday(api(day)))
